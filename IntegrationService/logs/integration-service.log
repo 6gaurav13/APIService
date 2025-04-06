@@ -1,0 +1,63 @@
+2025-04-06T11:53:18.208+05:30  INFO 37892 --- [IntegrationService] [main] c.e.I.IntegrationServiceApplication      : Starting IntegrationServiceApplication using Java 17.0.14 with PID 37892 (D:\IntegrationService\target\classes started by gaurav.bhadauriya in D:\IntegrationService)
+2025-04-06T11:53:18.230+05:30  INFO 37892 --- [IntegrationService] [main] c.e.I.IntegrationServiceApplication      : No active profile set, falling back to 1 default profile: "default"
+2025-04-06T11:53:19.062+05:30  INFO 37892 --- [IntegrationService] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-06T11:53:19.134+05:30  INFO 37892 --- [IntegrationService] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 60 ms. Found 1 JPA repository interface.
+2025-04-06T11:53:19.695+05:30  INFO 37892 --- [IntegrationService] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-04-06T11:53:19.715+05:30  INFO 37892 --- [IntegrationService] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-06T11:53:19.716+05:30  INFO 37892 --- [IntegrationService] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-04-06T11:53:19.783+05:30  INFO 37892 --- [IntegrationService] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-04-06T11:53:19.784+05:30  INFO 37892 --- [IntegrationService] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1459 ms
+2025-04-06T11:53:19.898+05:30  INFO 37892 --- [IntegrationService] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-04-06T11:53:20.288+05:30  INFO 37892 --- [IntegrationService] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3ab35b9c
+2025-04-06T11:53:20.290+05:30  INFO 37892 --- [IntegrationService] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-04-06T11:53:20.425+05:30  INFO 37892 --- [IntegrationService] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-06T11:53:20.528+05:30  INFO 37892 --- [IntegrationService] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-04-06T11:53:20.588+05:30  INFO 37892 --- [IntegrationService] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-04-06T11:53:21.007+05:30  INFO 37892 --- [IntegrationService] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-06T11:53:21.091+05:30  WARN 37892 --- [IntegrationService] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-04-06T11:53:21.114+05:30  INFO 37892 --- [IntegrationService] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-04-06T11:53:22.267+05:30  INFO 37892 --- [IntegrationService] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-06T11:53:22.328+05:30  INFO 37892 --- [IntegrationService] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-06T11:53:22.727+05:30  INFO 37892 --- [IntegrationService] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-04-06T11:53:23.249+05:30  WARN 37892 --- [IntegrationService] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-06T11:53:23.853+05:30  INFO 37892 --- [IntegrationService] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-04-06T11:53:23.867+05:30  INFO 37892 --- [IntegrationService] [main] c.e.I.IntegrationServiceApplication      : Started IntegrationServiceApplication in 6.108 seconds (process running for 6.77)
+2025-04-06T11:53:23.873+05:30  INFO 37892 --- [IntegrationService] [main] o.s.b.a.b.JobLauncherApplicationRunner   : Running default command line with: []
+2025-04-06T11:53:23.996+05:30  INFO 37892 --- [IntegrationService] [scheduling-1] PollingLogger                            : Executing task at polling 
+2025-04-06T11:53:28.884+05:30  INFO 37892 --- [IntegrationService] [scheduling-1] PollingLogger                            : Executing task at polling 
+2025-04-06T11:53:33.881+05:30  INFO 37892 --- [IntegrationService] [scheduling-1] PollingLogger                            : Executing task at polling 
+2025-04-06T11:53:38.868+05:30  INFO 37892 --- [IntegrationService] [scheduling-1] PollingLogger                            : Executing task at polling 
+2025-04-06T11:53:43.870+05:30  INFO 37892 --- [IntegrationService] [scheduling-1] PollingLogger                            : Executing task at polling 
+2025-04-06T11:53:48.876+05:30  INFO 37892 --- [IntegrationService] [scheduling-1] PollingLogger                            : Executing task at polling 
+2025-04-06T11:53:53.876+05:30  INFO 37892 --- [IntegrationService] [scheduling-1] PollingLogger                            : Executing task at polling 
+2025-04-06T11:53:58.872+05:30  INFO 37892 --- [IntegrationService] [scheduling-1] PollingLogger                            : Executing task at polling 
+2025-04-06T11:54:03.878+05:30  INFO 37892 --- [IntegrationService] [scheduling-1] PollingLogger                            : Executing task at polling 
+2025-04-06T11:54:08.877+05:30  INFO 37892 --- [IntegrationService] [scheduling-1] PollingLogger                            : Executing task at polling 
+2025-04-06T11:54:13.870+05:30  INFO 37892 --- [IntegrationService] [scheduling-1] PollingLogger                            : Executing task at polling 
+2025-04-06T11:54:18.921+05:30  INFO 37892 --- [IntegrationService] [scheduling-1] PollingLogger                            : Executing task at polling 
+2025-04-06T11:54:18.922+05:30  INFO 37892 --- [IntegrationService] [scheduling-1] PollingLogger                            : Config: name=Service_7, endpoint=https://api.example.com/service/7, request=null, response=null, status=01
+2025-04-06T11:54:18.952+05:30  INFO 37892 --- [IntegrationService] [scheduling-1] PollingLogger                            : Config: name=Service_8, endpoint=https://api.example.com/service/8, request=null, response=null, status=01
+2025-04-06T11:54:18.956+05:30  INFO 37892 --- [IntegrationService] [scheduling-1] PollingLogger                            : Config: name=Service_9, endpoint=https://api.example.com/service/9, request=null, response=null, status=01
+2025-04-06T11:54:23.870+05:30  INFO 37892 --- [IntegrationService] [scheduling-1] PollingLogger                            : Executing task at polling 
+2025-04-06T11:54:28.874+05:30  INFO 37892 --- [IntegrationService] [scheduling-1] PollingLogger                            : Executing task at polling 
+2025-04-06T11:54:33.876+05:30  INFO 37892 --- [IntegrationService] [scheduling-1] PollingLogger                            : Executing task at polling 
+2025-04-06T11:54:38.875+05:30  INFO 37892 --- [IntegrationService] [scheduling-1] PollingLogger                            : Executing task at polling 
+2025-04-06T11:54:43.870+05:30  INFO 37892 --- [IntegrationService] [scheduling-1] PollingLogger                            : Executing task at polling 
+2025-04-06T11:54:48.870+05:30  INFO 37892 --- [IntegrationService] [scheduling-1] PollingLogger                            : Executing task at polling 
+2025-04-06T11:54:53.879+05:30  INFO 37892 --- [IntegrationService] [scheduling-1] PollingLogger                            : Executing task at polling 
+2025-04-06T11:54:58.869+05:30  INFO 37892 --- [IntegrationService] [scheduling-1] PollingLogger                            : Executing task at polling 
+2025-04-06T11:55:03.870+05:30  INFO 37892 --- [IntegrationService] [scheduling-1] PollingLogger                            : Executing task at polling 
+2025-04-06T11:55:08.870+05:30  INFO 37892 --- [IntegrationService] [scheduling-1] PollingLogger                            : Executing task at polling 
+2025-04-06T11:55:13.177+05:30  INFO 37892 --- [IntegrationService] [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-04-06T11:55:13.180+05:30  INFO 37892 --- [IntegrationService] [RMI TCP Connection(2)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-06T11:55:13.504+05:30  INFO 37892 --- [IntegrationService] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-04-06T11:55:13.514+05:30  INFO 37892 --- [IntegrationService] [RMI TCP Connection(2)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-06T11:55:13.534+05:30  INFO 37892 --- [IntegrationService] [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-04-06T11:55:13.540+05:30  INFO 37892 --- [IntegrationService] [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

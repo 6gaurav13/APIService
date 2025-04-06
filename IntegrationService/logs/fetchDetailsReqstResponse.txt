@@ -1,0 +1,127 @@
+Request:
+
+<ns2:Envelope xmlns:ns2="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns3="http://webservice.omnifin.a3spl.com/">
+    <ns2:Body>
+        <ns3:fetchEarlyClosureGetDetailsDataWrapper2>
+            <earlyClosureGetDetailsRequestWrapper>
+                <callingFrom>closure</callingFrom>
+                <effectiveDate>Nov  2 2024 12:00AM</effectiveDate>
+                <loanId>26156</loanId>
+                <reasonforClosure>1153</reasonforClosure>
+                <subReasonforClosure>0</subReasonforClosure>
+                <userCredentials>
+                    <userId>123456</userId>
+                    <userPassword>6aaf0a678e49786f6143d4e8e03e0a727208b77151152968e9e815ceba35cf60</userPassword>
+                    <secureToken>kDqF7r7k52U</secureToken>
+                </userCredentials>
+            </earlyClosureGetDetailsRequestWrapper>
+        </ns3:fetchEarlyClosureGetDetailsDataWrapper2>
+    </ns2:Body>
+</ns2:Envelope>
+[09 Dec 2024 14:08:37,497:] - Calling sendRequest With Request Type as POST for URL:http://192.168.111.17:8080/OmniFinServices/earlyClosureOperationHandlerServices and requestHeader:{workitemid=LOS-00000000000000071_1__Fetchdetails, Content-Type=text/xml;charset=UTF-8}
+[09 Dec 2024 14:08:37,497:] - Calling sendRequest With Request Type as POST for URL:http://192.168.111.17:8080/OmniFinServices/earlyClosureOperationHandlerServices and requestBody:<ns2:Envelope xmlns:ns2="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns3="http://webservice.omnifin.a3spl.com/">
+    <ns2:Body>
+        <ns3:fetchEarlyClosureGetDetailsDataWrapper2>
+            <earlyClosureGetDetailsRequestWrapper>
+                <callingFrom>closure</callingFrom>
+                <effectiveDate>Nov  2 2024 12:00AM</effectiveDate>
+                <loanId>26156</loanId>
+                <reasonforClosure>1153</reasonforClosure>
+                <subReasonforClosure>0</subReasonforClosure>
+                <userCredentials>
+                    <userId>123456</userId>
+                    <userPassword>6aaf0a678e49786f6143d4e8e03e0a727208b77151152968e9e815ceba35cf60</userPassword>
+                    <secureToken>kDqF7r7k52U</secureToken>
+                </userCredentials>
+            </earlyClosureGetDetailsRequestWrapper>
+        </ns3:fetchEarlyClosureGetDetailsDataWrapper2>
+    </ns2:Body>
+</ns2:Envelope>
+
+
+Response :
+
+<?xml version="1.0" ?>
+<S:Envelope
+	xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+	<S:Body>
+		<ns2:fetchEarlyClosureGetDetailsDataWrapper2Response
+			xmlns:ns2="http://webservice.omnifin.a3spl.com/">
+			<return>
+				<fetchEarlyClosureGetDetailsDetails>
+					<accuredButUnpaidProfit>0.0</accuredButUnpaidProfit>
+					<advanceEmiRefunds>0.0</advanceEmiRefunds>
+					<advanceInstlRefund>0.0</advanceInstlRefund>
+					<advanceRvRefund>0.0</advanceRvRefund>
+					<balancePrincipal>55775.0</balancePrincipal>
+					<collectionWaiverAmount>0.0</collectionWaiverAmount>
+					<currentMonthEmi>1278.5</currentMonthEmi>
+					<currentResidualAmount>0.0</currentResidualAmount>
+					<deferedMaintenance>0.0</deferedMaintenance>
+					<deferedVat>0.0</deferedVat>
+					<deferredAdmin>0.0</deferredAdmin>
+					<deferredEarning>0.0</deferredEarning>
+					<deferredInsurance>0.0</deferredInsurance>
+					<downPaymentRefund>0.0</downPaymentRefund>
+					<foreClosurePenalty>0.0</foreClosurePenalty>
+					<grossBalance>0.0</grossBalance>
+					<insuranceDeficit>0.0</insuranceDeficit>
+					<insuranceDeficitVat>0.0</insuranceDeficitVat>
+					<insuranceSurplus>0.0</insuranceSurplus>
+					<insuranceSurplusVat>0.0</insuranceSurplusVat>
+					<insuranceTilldate>0.0</insuranceTilldate>
+					<insuranceTilldateVat>0.0</insuranceTilldateVat>
+					<interestTillDate>0.0</interestTillDate>
+					<lockinPeriodInterest>0.0</lockinPeriodInterest>
+					<otherCharges>0.0</otherCharges>
+					<otherDueVat>0.0</otherDueVat>
+					<otherDues>0.0</otherDues>
+					<otherRefunds>0.0</otherRefunds>
+					<otherTerminationDues>0.0</otherTerminationDues>
+					<otherTerminationDuesVat>0.0</otherTerminationDuesVat>
+					<overDueInstallments>0.0</overDueInstallments>
+					<overDueVat>0.0</overDueVat>
+					<overdueInsuranceVat>0.0</overdueInsuranceVat>
+					<overdueInsurence>0.0</overdueInsurence>
+					<overduePrincipal>0.0</overduePrincipal>
+					<rebate>23153.45</rebate>
+					<rvPayable>0.0</rvPayable>
+					<rvReceivable>55775.0</rvReceivable>
+					<rvRefund>0.0</rvRefund>
+					<secureDepositAmount>0.0</secureDepositAmount>
+					<secureDepositInterest>0.0</secureDepositInterest>
+					<secureDepositTds>0.0</secureDepositTds>
+					<secureDepositgapInterest>0.0</secureDepositgapInterest>
+					<secureDepositgapTds>0.0</secureDepositgapTds>
+					<termReasonChargesList>
+						<termReasonCharge>
+							<chargeAmount>0.00</chargeAmount>
+							<chargeCode>275</chargeCode>
+							<chargeDesc>ADMIN FEES</chargeDesc>
+							<inputData>0.00</inputData>
+							<taxAmount1>0.00</taxAmount1>
+							<taxAmount2>0.00</taxAmount2>
+							<taxCode></taxCode>
+						</termReasonCharge>
+					</termReasonChargesList>
+					<threeMonthsTermCost>0.0</threeMonthsTermCost>
+					<totalNetRecPay>55775.0</totalNetRecPay>
+					<totalPayable>0.0</totalPayable>
+					<totalReceivable>55775.0</totalReceivable>
+					<unbilledInstallments>0.0</unbilledInstallments>
+					<unbilledProfit>23153.45</unbilledProfit>
+					<unpaidPrincipal>55775.0</unpaidPrincipal>
+					<vatRefund>0.0</vatRefund>
+					<waiveOffAmount>0.0</waiveOffAmount>
+					<zatcaClaimAmt>0.0</zatcaClaimAmt>
+					<zatcaVatClaimAmt>0.0</zatcaVatClaimAmt>
+					<lPPAmount>0.0</lPPAmount>
+				</fetchEarlyClosureGetDetailsDetails>
+				<operationStatus>
+					<message>Operation completed successfully</message>
+					<status>1</status>
+				</operationStatus>
+			</return>
+		</ns2:fetchEarlyClosureGetDetailsDataWrapper2Response>
+	</S:Body>
+</S:Envelope>
