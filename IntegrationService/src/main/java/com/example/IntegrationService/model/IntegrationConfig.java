@@ -30,9 +30,7 @@ public class IntegrationConfig {
 	
 	@Column(name = "status")
 	String status;
-	
-	
-	String flag;
+
 
 	public Integer getId() {
 		return id;
