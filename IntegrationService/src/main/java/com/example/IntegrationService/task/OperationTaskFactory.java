@@ -18,6 +18,8 @@ public class OperationTaskFactory {
                 return new ConcordTask(fetchData); //returning it so that it can be used by taskexecutor
             case "zatca":
                 return new ZatcaTask(fetchData);
+            case "AML":
+            	throw new RuntimeException("Exception occured in AML");
             default:
                 throw new IllegalArgumentException("Unsupported operation: " + operationName);
         }
