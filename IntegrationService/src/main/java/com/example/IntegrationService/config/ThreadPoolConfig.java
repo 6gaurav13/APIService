@@ -14,7 +14,7 @@ public class ThreadPoolConfig {
         ThreadPoolTaskExecutor executor = new ThreadPoolTaskExecutor();
         executor.setCorePoolSize(5);       // min 5 threads
         executor.setMaxPoolSize(10);       // max threads
-        executor.setQueueCapacity(90);    // task queue size
+        executor.setQueueCapacity(100);    // task queue size
         executor.setThreadNamePrefix("IntegrationThread-");
         executor.initialize();
         return executor;
