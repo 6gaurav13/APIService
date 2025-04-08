@@ -31,6 +31,12 @@ public class IntegrationConfig {
 	@Column(name = "status")
 	String status;
 
+	@Column(name = "column")
+	String comment;
+
+	public String getComment() {
+		return comment;
+	}
 
 	public Integer getId() {
 		return id;
@@ -79,8 +85,8 @@ public class IntegrationConfig {
 	public void setStatus(String status) {
 		this.status = status;
 	}
-	
 
-
-	
+	public void setComment(String comment) {
+		this.comment = comment;
+	}
 }

@@ -21,5 +21,7 @@ public interface FetchData extends JpaRepository<IntegrationConfig, Integer>  {
 	@Modifying
 	@Query("Update IntegrationConfig ic set ic.status = '02' where ic.id =:id")
 	void updateStatusById(@Param("id") Integer id);
-	
+
+	@Query(value = "SELECT c FROM IntegrationConfig c WHERE c.status = '01'")
+	List<IntegrationConfig> findTop10ByStatus();
 }
