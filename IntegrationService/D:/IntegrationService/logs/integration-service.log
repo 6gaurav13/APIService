@@ -1,0 +1,292 @@
+2025-04-13T09:25:20.408+05:30  INFO 85357 --- [IntegrationService] [main] c.e.I.IntegrationServiceApplication      : Starting IntegrationServiceApplication using Java 21.0.5 with PID 85357 (/Users/sakshamvaishya/Documents/APIService/APIService/IntegrationService/target/classes started by sakshamvaishya in /Users/sakshamvaishya/Documents/APIService/APIService/IntegrationService)
+2025-04-13T09:25:20.412+05:30  INFO 85357 --- [IntegrationService] [main] c.e.I.IntegrationServiceApplication      : No active profile set, falling back to 1 default profile: "default"
+2025-04-13T09:25:20.691+05:30  INFO 85357 --- [IntegrationService] [main] o.s.b.c.c.annotation.BatchRegistrar      : Finished Spring Batch infrastructure beans configuration in 3 ms.
+2025-04-13T09:25:20.796+05:30  INFO 85357 --- [IntegrationService] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-13T09:25:20.825+05:30  INFO 85357 --- [IntegrationService] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 24 ms. Found 1 JPA repository interface.
+2025-04-13T09:25:21.111+05:30  INFO 85357 --- [IntegrationService] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
+2025-04-13T09:25:21.119+05:30  INFO 85357 --- [IntegrationService] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-13T09:25:21.119+05:30  INFO 85357 --- [IntegrationService] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-04-13T09:25:21.142+05:30  INFO 85357 --- [IntegrationService] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-04-13T09:25:21.142+05:30  INFO 85357 --- [IntegrationService] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 697 ms
+2025-04-13T09:25:21.220+05:30  INFO 85357 --- [IntegrationService] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-13T09:25:21.249+05:30  INFO 85357 --- [IntegrationService] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-04-13T09:25:21.268+05:30  INFO 85357 --- [IntegrationService] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-04-13T09:25:21.409+05:30  INFO 85357 --- [IntegrationService] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-13T09:25:21.423+05:30  INFO 85357 --- [IntegrationService] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-04-13T09:25:21.538+05:30  INFO 85357 --- [IntegrationService] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@18e4551
+2025-04-13T09:25:21.539+05:30  INFO 85357 --- [IntegrationService] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-04-13T09:25:21.558+05:30  WARN 85357 --- [IntegrationService] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-04-13T09:25:21.566+05:30  INFO 85357 --- [IntegrationService] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-04-13T09:25:21.950+05:30  INFO 85357 --- [IntegrationService] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-13T09:25:21.983+05:30  INFO 85357 --- [IntegrationService] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-13T09:25:22.000+05:30  INFO 85357 --- [IntegrationService] [main] o.s.b.c.r.s.JobRepositoryFactoryBean     : No database type set, using meta data indicating: POSTGRES
+2025-04-13T09:25:22.106+05:30  INFO 85357 --- [IntegrationService] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-04-13T09:25:22.432+05:30  INFO 85357 --- [IntegrationService] [main] c.e.I.config.BatchConfig                 : Inside the integrationJob
+2025-04-13T09:25:22.434+05:30  INFO 85357 --- [IntegrationService] [main] c.e.I.config.BatchConfig                 : Inside the integration Step
+2025-04-13T09:25:22.451+05:30  INFO 85357 --- [IntegrationService] [main] .c.a.BatchObservabilityBeanPostProcessor : No Micrometer observation registry found, defaulting to ObservationRegistry.NOOP
+2025-04-13T09:25:22.453+05:30  INFO 85357 --- [IntegrationService] [main] .c.a.BatchObservabilityBeanPostProcessor : No Micrometer observation registry found, defaulting to ObservationRegistry.NOOP
+2025-04-13T09:25:22.454+05:30  INFO 85357 --- [IntegrationService] [main] o.s.b.c.l.s.TaskExecutorJobLauncher      : No TaskExecutor has been set, defaulting to synchronous executor.
+2025-04-13T09:25:22.482+05:30  WARN 85357 --- [IntegrationService] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-13T09:25:22.640+05:30  INFO 85357 --- [IntegrationService] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path '/'
+2025-04-13T09:25:22.647+05:30  INFO 85357 --- [IntegrationService] [scheduling-1] PollingLogger                            : Launching Spring Batch job
+2025-04-13T09:25:22.647+05:30  INFO 85357 --- [IntegrationService] [main] c.e.I.IntegrationServiceApplication      : Started IntegrationServiceApplication in 2.502 seconds (process running for 2.73)
+2025-04-13T09:25:22.680+05:30  INFO 85357 --- [IntegrationService] [scheduling-1] o.s.b.c.l.s.TaskExecutorJobLauncher      : Job: [SimpleJob: [name=integrationJob]] launched with the following parameters: [{'time':'{value=1744516522647, type=class java.lang.Long, identifying=true}'}]
+2025-04-13T09:25:22.694+05:30  INFO 85357 --- [IntegrationService] [scheduling-1] o.s.batch.core.job.SimpleStepHandler     : Executing step: [integrationStep]
+2025-04-13T09:25:22.743+05:30  INFO 85357 --- [IntegrationService] [scheduling-1] c.e.I.service.IntegrationProcessor       : Service Name is -> concord
+2025-04-13T09:25:22.743+05:30  INFO 85357 --- [IntegrationService] [scheduling-1] Concord logger                           : Running ConcordTask for ID 8
+2025-04-13T09:25:23.785+05:30  INFO 85357 --- [IntegrationService] [scheduling-1] Concord logger                           : ConcordTask complete for ID 8
+2025-04-13T09:25:23.785+05:30  INFO 85357 --- [IntegrationService] [scheduling-1] c.e.I.service.IntegrationProcessor       : Service Name is -> concord
+2025-04-13T09:25:23.785+05:30  INFO 85357 --- [IntegrationService] [scheduling-1] Concord logger                           : Running ConcordTask for ID 19
+2025-04-13T09:25:24.792+05:30  INFO 85357 --- [IntegrationService] [scheduling-1] Concord logger                           : ConcordTask complete for ID 19
+2025-04-13T09:25:24.792+05:30  INFO 85357 --- [IntegrationService] [scheduling-1] c.e.I.service.IntegrationProcessor       : Service Name is -> concord
+2025-04-13T09:25:24.793+05:30  INFO 85357 --- [IntegrationService] [scheduling-1] Concord logger                           : Running ConcordTask for ID 4
+2025-04-13T09:25:25.806+05:30  INFO 85357 --- [IntegrationService] [scheduling-1] Concord logger                           : ConcordTask complete for ID 4
+2025-04-13T09:25:25.807+05:30  INFO 85357 --- [IntegrationService] [scheduling-1] c.e.I.service.IntegrationProcessor       : Service Name is -> concord
+2025-04-13T09:25:25.807+05:30  INFO 85357 --- [IntegrationService] [scheduling-1] Concord logger                           : Running ConcordTask for ID 16
+2025-04-13T09:25:26.819+05:30  INFO 85357 --- [IntegrationService] [scheduling-1] Concord logger                           : ConcordTask complete for ID 16
+2025-04-13T09:25:26.822+05:30  INFO 85357 --- [IntegrationService] [scheduling-1] c.e.I.service.IntegrationProcessor       : Service Name is -> concord
+2025-04-13T09:25:26.823+05:30  INFO 85357 --- [IntegrationService] [scheduling-1] Concord logger                           : Running ConcordTask for ID 18
+2025-04-13T09:25:27.836+05:30  INFO 85357 --- [IntegrationService] [scheduling-1] Concord logger                           : ConcordTask complete for ID 18
+2025-04-13T09:25:27.837+05:30  INFO 85357 --- [IntegrationService] [scheduling-1] c.e.I.service.IntegrationProcessor       : Service Name is -> concord
+2025-04-13T09:25:27.837+05:30  INFO 85357 --- [IntegrationService] [scheduling-1] Concord logger                           : Running ConcordTask for ID 9
+2025-04-13T09:25:28.858+05:30  INFO 85357 --- [IntegrationService] [scheduling-1] Concord logger                           : ConcordTask complete for ID 9
+2025-04-13T09:25:28.858+05:30  INFO 85357 --- [IntegrationService] [scheduling-1] c.e.I.service.IntegrationProcessor       : Service Name is -> concord
+2025-04-13T09:25:28.859+05:30  INFO 85357 --- [IntegrationService] [scheduling-1] Concord logger                           : Running ConcordTask for ID 3
+2025-04-13T09:25:29.874+05:30  INFO 85357 --- [IntegrationService] [scheduling-1] Concord logger                           : ConcordTask complete for ID 3
+2025-04-13T09:25:29.875+05:30  INFO 85357 --- [IntegrationService] [scheduling-1] c.e.I.service.IntegrationProcessor       : Service Name is -> concord
+2025-04-13T09:25:29.875+05:30  INFO 85357 --- [IntegrationService] [scheduling-1] Concord logger                           : Running ConcordTask for ID 15
+2025-04-13T09:25:30.883+05:30  INFO 85357 --- [IntegrationService] [scheduling-1] Concord logger                           : ConcordTask complete for ID 15
+2025-04-13T09:25:30.883+05:30  INFO 85357 --- [IntegrationService] [scheduling-1] c.e.I.service.IntegrationProcessor       : Service Name is -> concord
+2025-04-13T09:25:30.883+05:30  INFO 85357 --- [IntegrationService] [scheduling-1] Concord logger                           : Running ConcordTask for ID 5
+2025-04-13T09:25:31.892+05:30  INFO 85357 --- [IntegrationService] [scheduling-1] Concord logger                           : ConcordTask complete for ID 5
+2025-04-13T09:25:31.892+05:30  INFO 85357 --- [IntegrationService] [scheduling-1] c.e.I.service.IntegrationProcessor       : Service Name is -> concord
+2025-04-13T09:25:31.892+05:30  INFO 85357 --- [IntegrationService] [scheduling-1] Concord logger                           : Running ConcordTask for ID 14
+2025-04-13T09:25:32.902+05:30  INFO 85357 --- [IntegrationService] [scheduling-1] Concord logger                           : ConcordTask complete for ID 14
+2025-04-13T09:25:32.916+05:30  INFO 85357 --- [IntegrationService] [scheduling-1] c.e.I.service.IntegrationProcessor       : Service Name is -> concord
+2025-04-13T09:25:32.917+05:30  INFO 85357 --- [IntegrationService] [scheduling-1] Concord logger                           : Running ConcordTask for ID 2
+2025-04-13T09:25:33.923+05:30  INFO 85357 --- [IntegrationService] [scheduling-1] Concord logger                           : ConcordTask complete for ID 2
+2025-04-13T09:25:33.924+05:30  INFO 85357 --- [IntegrationService] [scheduling-1] c.e.I.service.IntegrationProcessor       : Service Name is -> concord
+2025-04-13T09:25:33.924+05:30  INFO 85357 --- [IntegrationService] [scheduling-1] Concord logger                           : Running ConcordTask for ID 7
+2025-04-13T09:25:34.932+05:30  INFO 85357 --- [IntegrationService] [scheduling-1] Concord logger                           : ConcordTask complete for ID 7
+2025-04-13T09:25:34.933+05:30  INFO 85357 --- [IntegrationService] [scheduling-1] c.e.I.service.IntegrationProcessor       : Service Name is -> concord
+2025-04-13T09:25:34.933+05:30  INFO 85357 --- [IntegrationService] [scheduling-1] Concord logger                           : Running ConcordTask for ID 21
+2025-04-13T09:25:35.941+05:30  INFO 85357 --- [IntegrationService] [scheduling-1] Concord logger                           : ConcordTask complete for ID 21
+2025-04-13T09:25:35.942+05:30  INFO 85357 --- [IntegrationService] [scheduling-1] c.e.I.service.IntegrationProcessor       : Service Name is -> concord
+2025-04-13T09:25:35.942+05:30  INFO 85357 --- [IntegrationService] [scheduling-1] Concord logger                           : Running ConcordTask for ID 20
+2025-04-13T09:25:36.947+05:30  INFO 85357 --- [IntegrationService] [scheduling-1] Concord logger                           : ConcordTask complete for ID 20
+2025-04-13T09:25:36.948+05:30  INFO 85357 --- [IntegrationService] [scheduling-1] c.e.I.service.IntegrationProcessor       : Service Name is -> concord
+2025-04-13T09:25:36.948+05:30  INFO 85357 --- [IntegrationService] [scheduling-1] Concord logger                           : Running ConcordTask for ID 6
+2025-04-13T09:25:37.958+05:30  INFO 85357 --- [IntegrationService] [scheduling-1] Concord logger                           : ConcordTask complete for ID 6
+2025-04-13T09:25:37.958+05:30  INFO 85357 --- [IntegrationService] [scheduling-1] c.e.I.service.IntegrationProcessor       : Service Name is -> concord
+2025-04-13T09:25:37.958+05:30  INFO 85357 --- [IntegrationService] [scheduling-1] Concord logger                           : Running ConcordTask for ID 11
+2025-04-13T09:25:38.968+05:30  INFO 85357 --- [IntegrationService] [scheduling-1] Concord logger                           : ConcordTask complete for ID 11
+2025-04-13T09:25:38.969+05:30  INFO 85357 --- [IntegrationService] [scheduling-1] c.e.I.service.IntegrationProcessor       : Service Name is -> concord
+2025-04-13T09:25:38.969+05:30  INFO 85357 --- [IntegrationService] [scheduling-1] Concord logger                           : Running ConcordTask for ID 13
+2025-04-13T09:25:39.972+05:30  INFO 85357 --- [IntegrationService] [scheduling-1] Concord logger                           : ConcordTask complete for ID 13
+2025-04-13T09:25:39.972+05:30  INFO 85357 --- [IntegrationService] [scheduling-1] c.e.I.service.IntegrationProcessor       : Service Name is -> concord
+2025-04-13T09:25:39.972+05:30  INFO 85357 --- [IntegrationService] [scheduling-1] Concord logger                           : Running ConcordTask for ID 1
+2025-04-13T09:25:40.982+05:30  INFO 85357 --- [IntegrationService] [scheduling-1] Concord logger                           : ConcordTask complete for ID 1
+2025-04-13T09:25:40.983+05:30  INFO 85357 --- [IntegrationService] [scheduling-1] c.e.I.service.IntegrationProcessor       : Service Name is -> concord
+2025-04-13T09:25:40.983+05:30  INFO 85357 --- [IntegrationService] [scheduling-1] Concord logger                           : Running ConcordTask for ID 17
+2025-04-13T09:25:41.993+05:30  INFO 85357 --- [IntegrationService] [scheduling-1] Concord logger                           : ConcordTask complete for ID 17
+2025-04-13T09:25:41.995+05:30  INFO 85357 --- [IntegrationService] [scheduling-1] c.e.I.service.IntegrationProcessor       : Service Name is -> concord
+2025-04-13T09:25:41.996+05:30  INFO 85357 --- [IntegrationService] [scheduling-1] Concord logger                           : Running ConcordTask for ID 12
+2025-04-13T09:25:43.006+05:30  INFO 85357 --- [IntegrationService] [scheduling-1] Concord logger                           : ConcordTask complete for ID 12
+2025-04-13T09:25:43.054+05:30  INFO 85357 --- [IntegrationService] [scheduling-1] c.e.I.service.IntegrationProcessor       : Service Name is -> concord
+2025-04-13T09:25:43.054+05:30  INFO 85357 --- [IntegrationService] [scheduling-1] Concord logger                           : Running ConcordTask for ID 10
+2025-04-13T09:25:44.059+05:30  INFO 85357 --- [IntegrationService] [scheduling-1] Concord logger                           : ConcordTask complete for ID 10
+2025-04-13T09:25:44.068+05:30  INFO 85357 --- [IntegrationService] [scheduling-1] o.s.batch.core.step.AbstractStep         : Step: [integrationStep] executed in 21s372ms
+2025-04-13T09:25:44.078+05:30  INFO 85357 --- [IntegrationService] [scheduling-1] o.s.b.c.l.s.TaskExecutorJobLauncher      : Job: [SimpleJob: [name=integrationJob]] completed with the following parameters: [{'time':'{value=1744516522647, type=class java.lang.Long, identifying=true}'}] and the following status: [COMPLETED] in 21s390ms
+2025-04-13T09:25:44.079+05:30  INFO 85357 --- [IntegrationService] [scheduling-1] PollingLogger                            : Launching Spring Batch job
+2025-04-13T09:25:44.086+05:30  INFO 85357 --- [IntegrationService] [scheduling-1] o.s.b.c.l.s.TaskExecutorJobLauncher      : Job: [SimpleJob: [name=integrationJob]] launched with the following parameters: [{'time':'{value=1744516544079, type=class java.lang.Long, identifying=true}'}]
+2025-04-13T09:25:44.091+05:30  INFO 85357 --- [IntegrationService] [scheduling-1] o.s.batch.core.job.SimpleStepHandler     : Executing step: [integrationStep]
+2025-04-13T09:25:44.096+05:30  INFO 85357 --- [IntegrationService] [scheduling-1] o.s.batch.core.step.AbstractStep         : Step: [integrationStep] executed in 4ms
+2025-04-13T09:25:44.101+05:30  INFO 85357 --- [IntegrationService] [scheduling-1] o.s.b.c.l.s.TaskExecutorJobLauncher      : Job: [SimpleJob: [name=integrationJob]] completed with the following parameters: [{'time':'{value=1744516544079, type=class java.lang.Long, identifying=true}'}] and the following status: [COMPLETED] in 13ms
+2025-04-13T09:25:44.102+05:30  INFO 85357 --- [IntegrationService] [scheduling-1] PollingLogger                            : Launching Spring Batch job
+2025-04-13T09:25:44.108+05:30  INFO 85357 --- [IntegrationService] [scheduling-1] o.s.b.c.l.s.TaskExecutorJobLauncher      : Job: [SimpleJob: [name=integrationJob]] launched with the following parameters: [{'time':'{value=1744516544102, type=class java.lang.Long, identifying=true}'}]
+2025-04-13T09:25:44.120+05:30  INFO 85357 --- [IntegrationService] [scheduling-1] o.s.batch.core.job.SimpleStepHandler     : Executing step: [integrationStep]
+2025-04-13T09:25:44.127+05:30  INFO 85357 --- [IntegrationService] [scheduling-1] o.s.batch.core.step.AbstractStep         : Step: [integrationStep] executed in 5ms
+2025-04-13T09:25:44.131+05:30  INFO 85357 --- [IntegrationService] [scheduling-1] o.s.b.c.l.s.TaskExecutorJobLauncher      : Job: [SimpleJob: [name=integrationJob]] completed with the following parameters: [{'time':'{value=1744516544102, type=class java.lang.Long, identifying=true}'}] and the following status: [COMPLETED] in 21ms
+2025-04-13T09:25:44.131+05:30  INFO 85357 --- [IntegrationService] [scheduling-1] PollingLogger                            : Launching Spring Batch job
+2025-04-13T09:25:44.135+05:30  INFO 85357 --- [IntegrationService] [scheduling-1] o.s.b.c.l.s.TaskExecutorJobLauncher      : Job: [SimpleJob: [name=integrationJob]] launched with the following parameters: [{'time':'{value=1744516544131, type=class java.lang.Long, identifying=true}'}]
+2025-04-13T09:25:44.139+05:30  INFO 85357 --- [IntegrationService] [scheduling-1] o.s.batch.core.job.SimpleStepHandler     : Executing step: [integrationStep]
+2025-04-13T09:25:44.143+05:30  INFO 85357 --- [IntegrationService] [scheduling-1] o.s.batch.core.step.AbstractStep         : Step: [integrationStep] executed in 3ms
+2025-04-13T09:25:44.146+05:30  INFO 85357 --- [IntegrationService] [scheduling-1] o.s.b.c.l.s.TaskExecutorJobLauncher      : Job: [SimpleJob: [name=integrationJob]] completed with the following parameters: [{'time':'{value=1744516544131, type=class java.lang.Long, identifying=true}'}] and the following status: [COMPLETED] in 9ms
+2025-04-13T09:25:44.146+05:30  INFO 85357 --- [IntegrationService] [scheduling-1] PollingLogger                            : Launching Spring Batch job
+2025-04-13T09:25:44.150+05:30  INFO 85357 --- [IntegrationService] [scheduling-1] o.s.b.c.l.s.TaskExecutorJobLauncher      : Job: [SimpleJob: [name=integrationJob]] launched with the following parameters: [{'time':'{value=1744516544146, type=class java.lang.Long, identifying=true}'}]
+2025-04-13T09:25:44.154+05:30  INFO 85357 --- [IntegrationService] [scheduling-1] o.s.batch.core.job.SimpleStepHandler     : Executing step: [integrationStep]
+2025-04-13T09:25:44.158+05:30  INFO 85357 --- [IntegrationService] [scheduling-1] o.s.batch.core.step.AbstractStep         : Step: [integrationStep] executed in 3ms
+2025-04-13T09:25:44.164+05:30  INFO 85357 --- [IntegrationService] [scheduling-1] o.s.b.c.l.s.TaskExecutorJobLauncher      : Job: [SimpleJob: [name=integrationJob]] completed with the following parameters: [{'time':'{value=1744516544146, type=class java.lang.Long, identifying=true}'}] and the following status: [COMPLETED] in 11ms
+2025-04-13T09:25:47.650+05:30  INFO 85357 --- [IntegrationService] [scheduling-1] PollingLogger                            : Launching Spring Batch job
+2025-04-13T09:25:47.665+05:30  INFO 85357 --- [IntegrationService] [scheduling-1] o.s.b.c.l.s.TaskExecutorJobLauncher      : Job: [SimpleJob: [name=integrationJob]] launched with the following parameters: [{'time':'{value=1744516547651, type=class java.lang.Long, identifying=true}'}]
+2025-04-13T09:25:47.673+05:30  INFO 85357 --- [IntegrationService] [scheduling-1] o.s.batch.core.job.SimpleStepHandler     : Executing step: [integrationStep]
+2025-04-13T09:25:47.680+05:30  INFO 85357 --- [IntegrationService] [scheduling-1] o.s.batch.core.step.AbstractStep         : Step: [integrationStep] executed in 7ms
+2025-04-13T09:25:47.686+05:30  INFO 85357 --- [IntegrationService] [scheduling-1] o.s.b.c.l.s.TaskExecutorJobLauncher      : Job: [SimpleJob: [name=integrationJob]] completed with the following parameters: [{'time':'{value=1744516547651, type=class java.lang.Long, identifying=true}'}] and the following status: [COMPLETED] in 18ms
+2025-04-13T09:25:52.646+05:30  INFO 85357 --- [IntegrationService] [scheduling-1] PollingLogger                            : Launching Spring Batch job
+2025-04-13T09:25:52.668+05:30  INFO 85357 --- [IntegrationService] [scheduling-1] o.s.b.c.l.s.TaskExecutorJobLauncher      : Job: [SimpleJob: [name=integrationJob]] launched with the following parameters: [{'time':'{value=1744516552648, type=class java.lang.Long, identifying=true}'}]
+2025-04-13T09:25:52.677+05:30  INFO 85357 --- [IntegrationService] [scheduling-1] o.s.batch.core.job.SimpleStepHandler     : Executing step: [integrationStep]
+2025-04-13T09:25:52.682+05:30  INFO 85357 --- [IntegrationService] [scheduling-1] o.s.batch.core.step.AbstractStep         : Step: [integrationStep] executed in 5ms
+2025-04-13T09:25:52.687+05:30  INFO 85357 --- [IntegrationService] [scheduling-1] o.s.b.c.l.s.TaskExecutorJobLauncher      : Job: [SimpleJob: [name=integrationJob]] completed with the following parameters: [{'time':'{value=1744516552648, type=class java.lang.Long, identifying=true}'}] and the following status: [COMPLETED] in 16ms
+2025-04-13T09:25:57.649+05:30  INFO 85357 --- [IntegrationService] [scheduling-1] PollingLogger                            : Launching Spring Batch job
+2025-04-13T09:25:57.661+05:30  INFO 85357 --- [IntegrationService] [scheduling-1] o.s.b.c.l.s.TaskExecutorJobLauncher      : Job: [SimpleJob: [name=integrationJob]] launched with the following parameters: [{'time':'{value=1744516557649, type=class java.lang.Long, identifying=true}'}]
+2025-04-13T09:25:57.669+05:30  INFO 85357 --- [IntegrationService] [scheduling-1] o.s.batch.core.job.SimpleStepHandler     : Executing step: [integrationStep]
+2025-04-13T09:25:57.675+05:30  INFO 85357 --- [IntegrationService] [scheduling-1] o.s.batch.core.step.AbstractStep         : Step: [integrationStep] executed in 5ms
+2025-04-13T09:25:57.680+05:30  INFO 85357 --- [IntegrationService] [scheduling-1] o.s.b.c.l.s.TaskExecutorJobLauncher      : Job: [SimpleJob: [name=integrationJob]] completed with the following parameters: [{'time':'{value=1744516557649, type=class java.lang.Long, identifying=true}'}] and the following status: [COMPLETED] in 16ms
+2025-04-13T09:25:59.532+05:30  INFO 85357 --- [IntegrationService] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-13T09:25:59.538+05:30  INFO 85357 --- [IntegrationService] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-04-13T09:25:59.543+05:30  INFO 85357 --- [IntegrationService] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-13T09:25:59.545+05:30  INFO 85357 --- [IntegrationService] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-04-13T09:25:59.547+05:30  INFO 85357 --- [IntegrationService] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-04-13T09:27:16.077+05:30  INFO 85455 --- [IntegrationService] [main] c.e.I.IntegrationServiceApplication      : Starting IntegrationServiceApplication using Java 21.0.5 with PID 85455 (/Users/sakshamvaishya/Documents/APIService/APIService/IntegrationService/target/classes started by sakshamvaishya in /Users/sakshamvaishya/Documents/APIService/APIService/IntegrationService)
+2025-04-13T09:27:16.079+05:30  INFO 85455 --- [IntegrationService] [main] c.e.I.IntegrationServiceApplication      : No active profile set, falling back to 1 default profile: "default"
+2025-04-13T09:27:16.351+05:30  INFO 85455 --- [IntegrationService] [main] o.s.b.c.c.annotation.BatchRegistrar      : Finished Spring Batch infrastructure beans configuration in 2 ms.
+2025-04-13T09:27:16.566+05:30  INFO 85455 --- [IntegrationService] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-13T09:27:16.595+05:30  INFO 85455 --- [IntegrationService] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 24 ms. Found 1 JPA repository interface.
+2025-04-13T09:27:16.859+05:30  INFO 85455 --- [IntegrationService] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
+2025-04-13T09:27:16.866+05:30  INFO 85455 --- [IntegrationService] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-13T09:27:16.866+05:30  INFO 85455 --- [IntegrationService] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-04-13T09:27:16.893+05:30  INFO 85455 --- [IntegrationService] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-04-13T09:27:16.893+05:30  INFO 85455 --- [IntegrationService] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 789 ms
+2025-04-13T09:27:16.967+05:30  INFO 85455 --- [IntegrationService] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-13T09:27:16.994+05:30  INFO 85455 --- [IntegrationService] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-04-13T09:27:17.009+05:30  INFO 85455 --- [IntegrationService] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-04-13T09:27:17.193+05:30  INFO 85455 --- [IntegrationService] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-13T09:27:17.207+05:30  INFO 85455 --- [IntegrationService] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-04-13T09:27:17.297+05:30  INFO 85455 --- [IntegrationService] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@69ffdaa8
+2025-04-13T09:27:17.298+05:30  INFO 85455 --- [IntegrationService] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-04-13T09:27:17.314+05:30  WARN 85455 --- [IntegrationService] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-04-13T09:27:17.323+05:30  INFO 85455 --- [IntegrationService] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-04-13T09:27:17.713+05:30  INFO 85455 --- [IntegrationService] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-13T09:27:17.739+05:30  INFO 85455 --- [IntegrationService] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-13T09:27:17.755+05:30  INFO 85455 --- [IntegrationService] [main] o.s.b.c.r.s.JobRepositoryFactoryBean     : No database type set, using meta data indicating: POSTGRES
+2025-04-13T09:27:17.869+05:30  INFO 85455 --- [IntegrationService] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-04-13T09:27:18.231+05:30  INFO 85455 --- [IntegrationService] [main] c.e.I.config.BatchConfig                 : Inside the integrationJob
+2025-04-13T09:27:18.233+05:30  INFO 85455 --- [IntegrationService] [main] c.e.I.config.BatchConfig                 : Inside the integration Step
+2025-04-13T09:27:18.248+05:30  INFO 85455 --- [IntegrationService] [main] .c.a.BatchObservabilityBeanPostProcessor : No Micrometer observation registry found, defaulting to ObservationRegistry.NOOP
+2025-04-13T09:27:18.250+05:30  INFO 85455 --- [IntegrationService] [main] .c.a.BatchObservabilityBeanPostProcessor : No Micrometer observation registry found, defaulting to ObservationRegistry.NOOP
+2025-04-13T09:27:18.251+05:30  INFO 85455 --- [IntegrationService] [main] o.s.b.c.l.s.TaskExecutorJobLauncher      : No TaskExecutor has been set, defaulting to synchronous executor.
+2025-04-13T09:27:18.280+05:30  WARN 85455 --- [IntegrationService] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-13T09:27:18.429+05:30  INFO 85455 --- [IntegrationService] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path '/'
+2025-04-13T09:27:18.436+05:30  INFO 85455 --- [IntegrationService] [scheduling-1] PollingLogger                            : Launching Spring Batch job
+2025-04-13T09:27:18.436+05:30  INFO 85455 --- [IntegrationService] [main] c.e.I.IntegrationServiceApplication      : Started IntegrationServiceApplication in 2.61 seconds (process running for 2.801)
+2025-04-13T09:27:18.463+05:30  INFO 85455 --- [IntegrationService] [scheduling-1] o.s.b.c.l.s.TaskExecutorJobLauncher      : Job: [SimpleJob: [name=integrationJob]] launched with the following parameters: [{'time':'{value=1744516638436, type=class java.lang.Long, identifying=true}'}]
+2025-04-13T09:27:18.475+05:30  INFO 85455 --- [IntegrationService] [scheduling-1] o.s.batch.core.job.SimpleStepHandler     : Executing step: [integrationStep]
+2025-04-13T09:27:18.533+05:30  INFO 85455 --- [IntegrationService] [scheduling-1] c.e.I.service.IntegrationProcessor       : Service Name is -> zatca
+2025-04-13T09:27:18.534+05:30  INFO 85455 --- [IntegrationService] [scheduling-1] c.e.IntegrationService.task.ZatcaTask    : Running ZatcaTask for ID 7
+2025-04-13T09:27:19.588+05:30  INFO 85455 --- [IntegrationService] [scheduling-1] c.e.IntegrationService.task.ZatcaTask    : ZatcaTask complete for ID 7
+2025-04-13T09:27:19.588+05:30  INFO 85455 --- [IntegrationService] [scheduling-1] c.e.I.service.IntegrationProcessor       : Service Name is -> zatca
+2025-04-13T09:27:19.588+05:30  INFO 85455 --- [IntegrationService] [scheduling-1] c.e.IntegrationService.task.ZatcaTask    : Running ZatcaTask for ID 21
+2025-04-13T09:27:20.604+05:30  INFO 85455 --- [IntegrationService] [scheduling-1] c.e.IntegrationService.task.ZatcaTask    : ZatcaTask complete for ID 21
+2025-04-13T09:27:20.608+05:30  INFO 85455 --- [IntegrationService] [scheduling-1] c.e.I.service.IntegrationProcessor       : Service Name is -> zatca
+2025-04-13T09:27:20.608+05:30  INFO 85455 --- [IntegrationService] [scheduling-1] c.e.IntegrationService.task.ZatcaTask    : Running ZatcaTask for ID 20
+2025-04-13T09:27:21.625+05:30  INFO 85455 --- [IntegrationService] [scheduling-1] c.e.IntegrationService.task.ZatcaTask    : ZatcaTask complete for ID 20
+2025-04-13T09:27:21.626+05:30  INFO 85455 --- [IntegrationService] [scheduling-1] c.e.I.service.IntegrationProcessor       : Service Name is -> zatca
+2025-04-13T09:27:21.626+05:30  INFO 85455 --- [IntegrationService] [scheduling-1] c.e.IntegrationService.task.ZatcaTask    : Running ZatcaTask for ID 6
+2025-04-13T09:27:22.641+05:30  INFO 85455 --- [IntegrationService] [scheduling-1] c.e.IntegrationService.task.ZatcaTask    : ZatcaTask complete for ID 6
+2025-04-13T09:27:22.642+05:30  INFO 85455 --- [IntegrationService] [scheduling-1] c.e.I.service.IntegrationProcessor       : Service Name is -> zatca
+2025-04-13T09:27:22.642+05:30  INFO 85455 --- [IntegrationService] [scheduling-1] c.e.IntegrationService.task.ZatcaTask    : Running ZatcaTask for ID 11
+2025-04-13T09:27:23.656+05:30  INFO 85455 --- [IntegrationService] [scheduling-1] c.e.IntegrationService.task.ZatcaTask    : ZatcaTask complete for ID 11
+2025-04-13T09:27:23.657+05:30  INFO 85455 --- [IntegrationService] [scheduling-1] c.e.I.service.IntegrationProcessor       : Service Name is -> zatca
+2025-04-13T09:27:23.657+05:30  INFO 85455 --- [IntegrationService] [scheduling-1] c.e.IntegrationService.task.ZatcaTask    : Running ZatcaTask for ID 13
+2025-04-13T09:27:24.664+05:30  INFO 85455 --- [IntegrationService] [scheduling-1] c.e.IntegrationService.task.ZatcaTask    : ZatcaTask complete for ID 13
+2025-04-13T09:27:24.665+05:30  INFO 85455 --- [IntegrationService] [scheduling-1] c.e.I.service.IntegrationProcessor       : Service Name is -> zatca
+2025-04-13T09:27:24.665+05:30  INFO 85455 --- [IntegrationService] [scheduling-1] c.e.IntegrationService.task.ZatcaTask    : Running ZatcaTask for ID 1
+2025-04-13T09:27:25.679+05:30  INFO 85455 --- [IntegrationService] [scheduling-1] c.e.IntegrationService.task.ZatcaTask    : ZatcaTask complete for ID 1
+2025-04-13T09:27:25.679+05:30  INFO 85455 --- [IntegrationService] [scheduling-1] c.e.I.service.IntegrationProcessor       : Service Name is -> zatca
+2025-04-13T09:27:25.680+05:30  INFO 85455 --- [IntegrationService] [scheduling-1] c.e.IntegrationService.task.ZatcaTask    : Running ZatcaTask for ID 17
+2025-04-13T09:27:26.691+05:30  INFO 85455 --- [IntegrationService] [scheduling-1] c.e.IntegrationService.task.ZatcaTask    : ZatcaTask complete for ID 17
+2025-04-13T09:27:26.692+05:30  INFO 85455 --- [IntegrationService] [scheduling-1] c.e.I.service.IntegrationProcessor       : Service Name is -> zatca
+2025-04-13T09:27:26.693+05:30  INFO 85455 --- [IntegrationService] [scheduling-1] c.e.IntegrationService.task.ZatcaTask    : Running ZatcaTask for ID 12
+2025-04-13T09:27:27.705+05:30  INFO 85455 --- [IntegrationService] [scheduling-1] c.e.IntegrationService.task.ZatcaTask    : ZatcaTask complete for ID 12
+2025-04-13T09:27:27.706+05:30  INFO 85455 --- [IntegrationService] [scheduling-1] c.e.I.service.IntegrationProcessor       : Service Name is -> zatca
+2025-04-13T09:27:27.706+05:30  INFO 85455 --- [IntegrationService] [scheduling-1] c.e.IntegrationService.task.ZatcaTask    : Running ZatcaTask for ID 10
+2025-04-13T09:27:28.719+05:30  INFO 85455 --- [IntegrationService] [scheduling-1] c.e.IntegrationService.task.ZatcaTask    : ZatcaTask complete for ID 10
+2025-04-13T09:27:28.732+05:30  INFO 85455 --- [IntegrationService] [scheduling-1] c.e.I.service.IntegrationProcessor       : Service Name is -> zatca
+2025-04-13T09:27:28.732+05:30  INFO 85455 --- [IntegrationService] [scheduling-1] c.e.IntegrationService.task.ZatcaTask    : Running ZatcaTask for ID 8
+2025-04-13T09:27:29.743+05:30  INFO 85455 --- [IntegrationService] [scheduling-1] c.e.IntegrationService.task.ZatcaTask    : ZatcaTask complete for ID 8
+2025-04-13T09:27:29.744+05:30  INFO 85455 --- [IntegrationService] [scheduling-1] c.e.I.service.IntegrationProcessor       : Service Name is -> zatca
+2025-04-13T09:27:29.745+05:30  INFO 85455 --- [IntegrationService] [scheduling-1] c.e.IntegrationService.task.ZatcaTask    : Running ZatcaTask for ID 19
+2025-04-13T09:27:30.758+05:30  INFO 85455 --- [IntegrationService] [scheduling-1] c.e.IntegrationService.task.ZatcaTask    : ZatcaTask complete for ID 19
+2025-04-13T09:27:30.758+05:30  INFO 85455 --- [IntegrationService] [scheduling-1] c.e.I.service.IntegrationProcessor       : Service Name is -> zatca
+2025-04-13T09:27:30.758+05:30  INFO 85455 --- [IntegrationService] [scheduling-1] c.e.IntegrationService.task.ZatcaTask    : Running ZatcaTask for ID 4
+2025-04-13T09:27:31.767+05:30  INFO 85455 --- [IntegrationService] [scheduling-1] c.e.IntegrationService.task.ZatcaTask    : ZatcaTask complete for ID 4
+2025-04-13T09:27:31.768+05:30  INFO 85455 --- [IntegrationService] [scheduling-1] c.e.I.service.IntegrationProcessor       : Service Name is -> zatca
+2025-04-13T09:27:31.769+05:30  INFO 85455 --- [IntegrationService] [scheduling-1] c.e.IntegrationService.task.ZatcaTask    : Running ZatcaTask for ID 16
+2025-04-13T09:27:32.776+05:30  INFO 85455 --- [IntegrationService] [scheduling-1] c.e.IntegrationService.task.ZatcaTask    : ZatcaTask complete for ID 16
+2025-04-13T09:27:32.776+05:30  INFO 85455 --- [IntegrationService] [scheduling-1] c.e.I.service.IntegrationProcessor       : Service Name is -> zatca
+2025-04-13T09:27:32.777+05:30  INFO 85455 --- [IntegrationService] [scheduling-1] c.e.IntegrationService.task.ZatcaTask    : Running ZatcaTask for ID 18
+2025-04-13T09:27:33.786+05:30  INFO 85455 --- [IntegrationService] [scheduling-1] c.e.IntegrationService.task.ZatcaTask    : ZatcaTask complete for ID 18
+2025-04-13T09:27:33.786+05:30  INFO 85455 --- [IntegrationService] [scheduling-1] c.e.I.service.IntegrationProcessor       : Service Name is -> zatca
+2025-04-13T09:27:33.787+05:30  INFO 85455 --- [IntegrationService] [scheduling-1] c.e.IntegrationService.task.ZatcaTask    : Running ZatcaTask for ID 9
+2025-04-13T09:27:34.795+05:30  INFO 85455 --- [IntegrationService] [scheduling-1] c.e.IntegrationService.task.ZatcaTask    : ZatcaTask complete for ID 9
+2025-04-13T09:27:34.796+05:30  INFO 85455 --- [IntegrationService] [scheduling-1] c.e.I.service.IntegrationProcessor       : Service Name is -> zatca
+2025-04-13T09:27:34.796+05:30  INFO 85455 --- [IntegrationService] [scheduling-1] c.e.IntegrationService.task.ZatcaTask    : Running ZatcaTask for ID 3
+2025-04-13T09:27:35.804+05:30  INFO 85455 --- [IntegrationService] [scheduling-1] c.e.IntegrationService.task.ZatcaTask    : ZatcaTask complete for ID 3
+2025-04-13T09:27:35.805+05:30  INFO 85455 --- [IntegrationService] [scheduling-1] c.e.I.service.IntegrationProcessor       : Service Name is -> zatca
+2025-04-13T09:27:35.805+05:30  INFO 85455 --- [IntegrationService] [scheduling-1] c.e.IntegrationService.task.ZatcaTask    : Running ZatcaTask for ID 15
+2025-04-13T09:27:36.815+05:30  INFO 85455 --- [IntegrationService] [scheduling-1] c.e.IntegrationService.task.ZatcaTask    : ZatcaTask complete for ID 15
+2025-04-13T09:27:36.817+05:30  INFO 85455 --- [IntegrationService] [scheduling-1] c.e.I.service.IntegrationProcessor       : Service Name is -> zatca
+2025-04-13T09:27:36.817+05:30  INFO 85455 --- [IntegrationService] [scheduling-1] c.e.IntegrationService.task.ZatcaTask    : Running ZatcaTask for ID 5
+2025-04-13T09:27:37.824+05:30  INFO 85455 --- [IntegrationService] [scheduling-1] c.e.IntegrationService.task.ZatcaTask    : ZatcaTask complete for ID 5
+2025-04-13T09:27:37.825+05:30  INFO 85455 --- [IntegrationService] [scheduling-1] c.e.I.service.IntegrationProcessor       : Service Name is -> zatca
+2025-04-13T09:27:37.825+05:30  INFO 85455 --- [IntegrationService] [scheduling-1] c.e.IntegrationService.task.ZatcaTask    : Running ZatcaTask for ID 14
+2025-04-13T09:27:38.832+05:30  INFO 85455 --- [IntegrationService] [scheduling-1] c.e.IntegrationService.task.ZatcaTask    : ZatcaTask complete for ID 14
+2025-04-13T09:27:38.865+05:30  INFO 85455 --- [IntegrationService] [scheduling-1] c.e.I.service.IntegrationProcessor       : Service Name is -> zatca
+2025-04-13T09:27:38.865+05:30  INFO 85455 --- [IntegrationService] [scheduling-1] c.e.IntegrationService.task.ZatcaTask    : Running ZatcaTask for ID 2
+2025-04-13T09:27:39.876+05:30  INFO 85455 --- [IntegrationService] [scheduling-1] c.e.IntegrationService.task.ZatcaTask    : ZatcaTask complete for ID 2
+2025-04-13T09:27:39.888+05:30  INFO 85455 --- [IntegrationService] [scheduling-1] o.s.batch.core.step.AbstractStep         : Step: [integrationStep] executed in 21s411ms
+2025-04-13T09:27:39.900+05:30  INFO 85455 --- [IntegrationService] [scheduling-1] o.s.b.c.l.s.TaskExecutorJobLauncher      : Job: [SimpleJob: [name=integrationJob]] completed with the following parameters: [{'time':'{value=1744516638436, type=class java.lang.Long, identifying=true}'}] and the following status: [COMPLETED] in 21s430ms
+2025-04-13T09:27:39.900+05:30  INFO 85455 --- [IntegrationService] [scheduling-1] PollingLogger                            : Launching Spring Batch job
+2025-04-13T09:27:39.909+05:30  INFO 85455 --- [IntegrationService] [scheduling-1] o.s.b.c.l.s.TaskExecutorJobLauncher      : Job: [SimpleJob: [name=integrationJob]] launched with the following parameters: [{'time':'{value=1744516659901, type=class java.lang.Long, identifying=true}'}]
+2025-04-13T09:27:39.916+05:30  INFO 85455 --- [IntegrationService] [scheduling-1] o.s.batch.core.job.SimpleStepHandler     : Executing step: [integrationStep]
+2025-04-13T09:27:39.922+05:30  INFO 85455 --- [IntegrationService] [scheduling-1] o.s.batch.core.step.AbstractStep         : Step: [integrationStep] executed in 5ms
+2025-04-13T09:27:39.928+05:30  INFO 85455 --- [IntegrationService] [scheduling-1] o.s.b.c.l.s.TaskExecutorJobLauncher      : Job: [SimpleJob: [name=integrationJob]] completed with the following parameters: [{'time':'{value=1744516659901, type=class java.lang.Long, identifying=true}'}] and the following status: [COMPLETED] in 16ms
+2025-04-13T09:27:39.928+05:30  INFO 85455 --- [IntegrationService] [scheduling-1] PollingLogger                            : Launching Spring Batch job
+2025-04-13T09:27:39.934+05:30  INFO 85455 --- [IntegrationService] [scheduling-1] o.s.b.c.l.s.TaskExecutorJobLauncher      : Job: [SimpleJob: [name=integrationJob]] launched with the following parameters: [{'time':'{value=1744516659928, type=class java.lang.Long, identifying=true}'}]
+2025-04-13T09:27:39.941+05:30  INFO 85455 --- [IntegrationService] [scheduling-1] o.s.batch.core.job.SimpleStepHandler     : Executing step: [integrationStep]
+2025-04-13T09:27:39.946+05:30  INFO 85455 --- [IntegrationService] [scheduling-1] o.s.batch.core.step.AbstractStep         : Step: [integrationStep] executed in 4ms
+2025-04-13T09:27:39.951+05:30  INFO 85455 --- [IntegrationService] [scheduling-1] o.s.b.c.l.s.TaskExecutorJobLauncher      : Job: [SimpleJob: [name=integrationJob]] completed with the following parameters: [{'time':'{value=1744516659928, type=class java.lang.Long, identifying=true}'}] and the following status: [COMPLETED] in 14ms
+2025-04-13T09:27:39.951+05:30  INFO 85455 --- [IntegrationService] [scheduling-1] PollingLogger                            : Launching Spring Batch job
+2025-04-13T09:27:39.957+05:30  INFO 85455 --- [IntegrationService] [scheduling-1] o.s.b.c.l.s.TaskExecutorJobLauncher      : Job: [SimpleJob: [name=integrationJob]] launched with the following parameters: [{'time':'{value=1744516659951, type=class java.lang.Long, identifying=true}'}]
+2025-04-13T09:27:39.963+05:30  INFO 85455 --- [IntegrationService] [scheduling-1] o.s.batch.core.job.SimpleStepHandler     : Executing step: [integrationStep]
+2025-04-13T09:27:39.967+05:30  INFO 85455 --- [IntegrationService] [scheduling-1] o.s.batch.core.step.AbstractStep         : Step: [integrationStep] executed in 4ms
+2025-04-13T09:27:39.971+05:30  INFO 85455 --- [IntegrationService] [scheduling-1] o.s.b.c.l.s.TaskExecutorJobLauncher      : Job: [SimpleJob: [name=integrationJob]] completed with the following parameters: [{'time':'{value=1744516659951, type=class java.lang.Long, identifying=true}'}] and the following status: [COMPLETED] in 12ms
+2025-04-13T09:27:39.971+05:30  INFO 85455 --- [IntegrationService] [scheduling-1] PollingLogger                            : Launching Spring Batch job
+2025-04-13T09:27:39.976+05:30  INFO 85455 --- [IntegrationService] [scheduling-1] o.s.b.c.l.s.TaskExecutorJobLauncher      : Job: [SimpleJob: [name=integrationJob]] launched with the following parameters: [{'time':'{value=1744516659971, type=class java.lang.Long, identifying=true}'}]
+2025-04-13T09:27:39.981+05:30  INFO 85455 --- [IntegrationService] [scheduling-1] o.s.batch.core.job.SimpleStepHandler     : Executing step: [integrationStep]
+2025-04-13T09:27:39.985+05:30  INFO 85455 --- [IntegrationService] [scheduling-1] o.s.batch.core.step.AbstractStep         : Step: [integrationStep] executed in 3ms
+2025-04-13T09:27:39.988+05:30  INFO 85455 --- [IntegrationService] [scheduling-1] o.s.b.c.l.s.TaskExecutorJobLauncher      : Job: [SimpleJob: [name=integrationJob]] completed with the following parameters: [{'time':'{value=1744516659971, type=class java.lang.Long, identifying=true}'}] and the following status: [COMPLETED] in 11ms
+2025-04-13T09:27:43.438+05:30  INFO 85455 --- [IntegrationService] [scheduling-1] PollingLogger                            : Launching Spring Batch job
+2025-04-13T09:27:43.450+05:30  INFO 85455 --- [IntegrationService] [scheduling-1] o.s.b.c.l.s.TaskExecutorJobLauncher      : Job: [SimpleJob: [name=integrationJob]] launched with the following parameters: [{'time':'{value=1744516663439, type=class java.lang.Long, identifying=true}'}]
+2025-04-13T09:27:43.458+05:30  INFO 85455 --- [IntegrationService] [scheduling-1] o.s.batch.core.job.SimpleStepHandler     : Executing step: [integrationStep]
+2025-04-13T09:27:43.464+05:30  INFO 85455 --- [IntegrationService] [scheduling-1] o.s.batch.core.step.AbstractStep         : Step: [integrationStep] executed in 5ms
+2025-04-13T09:27:43.470+05:30  INFO 85455 --- [IntegrationService] [scheduling-1] o.s.b.c.l.s.TaskExecutorJobLauncher      : Job: [SimpleJob: [name=integrationJob]] completed with the following parameters: [{'time':'{value=1744516663439, type=class java.lang.Long, identifying=true}'}] and the following status: [COMPLETED] in 17ms
+2025-04-13T09:27:48.438+05:30  INFO 85455 --- [IntegrationService] [scheduling-1] PollingLogger                            : Launching Spring Batch job
+2025-04-13T09:27:48.449+05:30  INFO 85455 --- [IntegrationService] [scheduling-1] o.s.b.c.l.s.TaskExecutorJobLauncher      : Job: [SimpleJob: [name=integrationJob]] launched with the following parameters: [{'time':'{value=1744516668439, type=class java.lang.Long, identifying=true}'}]
+2025-04-13T09:27:48.457+05:30  INFO 85455 --- [IntegrationService] [scheduling-1] o.s.batch.core.job.SimpleStepHandler     : Executing step: [integrationStep]
+2025-04-13T09:27:48.466+05:30  INFO 85455 --- [IntegrationService] [scheduling-1] o.s.batch.core.step.AbstractStep         : Step: [integrationStep] executed in 9ms
+2025-04-13T09:27:48.471+05:30  INFO 85455 --- [IntegrationService] [scheduling-1] o.s.b.c.l.s.TaskExecutorJobLauncher      : Job: [SimpleJob: [name=integrationJob]] completed with the following parameters: [{'time':'{value=1744516668439, type=class java.lang.Long, identifying=true}'}] and the following status: [COMPLETED] in 19ms
+2025-04-13T09:27:53.437+05:30  INFO 85455 --- [IntegrationService] [scheduling-1] PollingLogger                            : Launching Spring Batch job
+2025-04-13T09:27:53.469+05:30  INFO 85455 --- [IntegrationService] [scheduling-1] o.s.b.c.l.s.TaskExecutorJobLauncher      : Job: [SimpleJob: [name=integrationJob]] launched with the following parameters: [{'time':'{value=1744516673439, type=class java.lang.Long, identifying=true}'}]
+2025-04-13T09:27:53.475+05:30  INFO 85455 --- [IntegrationService] [scheduling-1] o.s.batch.core.job.SimpleStepHandler     : Executing step: [integrationStep]
+2025-04-13T09:27:53.488+05:30  INFO 85455 --- [IntegrationService] [scheduling-1] o.s.batch.core.step.AbstractStep         : Step: [integrationStep] executed in 12ms
+2025-04-13T09:27:53.493+05:30  INFO 85455 --- [IntegrationService] [scheduling-1] o.s.b.c.l.s.TaskExecutorJobLauncher      : Job: [SimpleJob: [name=integrationJob]] completed with the following parameters: [{'time':'{value=1744516673439, type=class java.lang.Long, identifying=true}'}] and the following status: [COMPLETED] in 22ms
+2025-04-13T09:27:56.190+05:30  INFO 85455 --- [IntegrationService] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-13T09:27:56.199+05:30  INFO 85455 --- [IntegrationService] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-04-13T09:27:56.204+05:30  INFO 85455 --- [IntegrationService] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-13T09:27:56.207+05:30  INFO 85455 --- [IntegrationService] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-04-13T09:27:56.209+05:30  INFO 85455 --- [IntegrationService] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

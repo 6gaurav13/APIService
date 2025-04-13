@@ -31,7 +31,7 @@ public class IntegrationConfig {
 	@Column(name = "status")
 	String status;
 
-	@Column(name = "column")
+	@Column(name = "comment")
 	String comment;
 
 	public String getComment() {
