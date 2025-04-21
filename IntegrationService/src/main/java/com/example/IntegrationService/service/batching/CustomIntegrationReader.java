@@ -1,34 +1,36 @@
-package com.example.IntegrationService.service;
+package com.example.IntegrationService.service.batching;
 
-import com.example.IntegrationService.model.IntegrationConfig;
+import com.example.IntegrationService.model.RequestQueue;
 import com.example.IntegrationService.repo.FetchData;
-import org.slf4j.ILoggerFactory;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.batch.item.ItemReader;
 import org.springframework.batch.item.NonTransientResourceException;
 import org.springframework.batch.item.ParseException;
 import org.springframework.batch.item.UnexpectedInputException;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 
 import java.util.Iterator;
 import java.util.List;
 
 @Service
-public class CustomIntegrationReader implements ItemReader<IntegrationConfig> {
+public class CustomIntegrationReader implements ItemReader<RequestQueue> {
 
-    private static final Logger logger = LoggerFactory.getLogger(CustomIntegrationReader.class);
+    private final Logger logger = LoggerFactory.getLogger(CustomIntegrationReader.class);
     private final FetchData fetchData;
 
-    private Iterator<IntegrationConfig>iterator;
+    private Iterator<RequestQueue>iterator;
 
     public CustomIntegrationReader(FetchData fetchData){
         this.fetchData = fetchData;
     }
     @Override
-    public IntegrationConfig read() throws Exception, UnexpectedInputException, ParseException, NonTransientResourceException {
+    public RequestQueue read() throws Exception, UnexpectedInputException, ParseException, NonTransientResourceException {
         if(iterator == null || !iterator.hasNext()){
-            List<IntegrationConfig> list = fetchData.findTop10ByStatus();
+            List<RequestQueue> list = fetchData.findTop10ByStatus(PageRequest.of(0,10));
+            logger.info("Fetched {} items for processing", list.size());
+
             list.forEach(config -> {
                 config.setComment("In Progress");
                 config.setStatus("03");
