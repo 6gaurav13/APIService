@@ -1,8 +1,8 @@
 package com.example.IntegrationService.task;
 
-import com.example.IntegrationService.model.IntegrationConfig;
+import com.example.IntegrationService.model.RequestQueue;
 
 public interface OperationTask extends Runnable {
 	
-	void setConfig(IntegrationConfig config);
+	void setConfig(RequestQueue config);
 }
